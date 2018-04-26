@@ -50,6 +50,12 @@ namespace WpfApplication1
         private void tallslider_ValueChanged(object sender, RoutedPropertyChangedEventArgs<double> e)
         {
             talltext.Text = tallslider.Value.ToString();
+            float tall = float.Parse(talltext.Text);
+            float weigh = float.Parse(weightext.Text);
+            float bmi;
+
+            bmi = weigh / (tall / 100 * tall / 100);
+            bmitext.Text = bmi.ToString();
         }
 
         private void talltext_TextChanged(object sender, TextChangedEventArgs e)
@@ -60,6 +66,12 @@ namespace WpfApplication1
         private void weighslider_ValueChanged(object sender, RoutedPropertyChangedEventArgs<double> e)
         {
             weightext.Text = weighslider.Value.ToString();
+            float tall = float.Parse(talltext.Text);
+            float weigh = float.Parse(weightext.Text);
+            float bmi;
+
+            bmi = weigh / (tall / 100 * tall / 100);
+            bmitext.Text = bmi.ToString();
         }
     }
 }
