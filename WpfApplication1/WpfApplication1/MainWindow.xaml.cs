@@ -47,5 +47,19 @@ namespace WpfApplication1
             bmitext.Text = bmi.ToString();
         }
 
+        private void tallslider_ValueChanged(object sender, RoutedPropertyChangedEventArgs<double> e)
+        {
+            talltext.Text = tallslider.Value.ToString();
+        }
+
+        private void talltext_TextChanged(object sender, TextChangedEventArgs e)
+        {
+            
+        }
+
+        private void weighslider_ValueChanged(object sender, RoutedPropertyChangedEventArgs<double> e)
+        {
+            weightext.Text = weighslider.Value.ToString();
+        }
     }
 }
